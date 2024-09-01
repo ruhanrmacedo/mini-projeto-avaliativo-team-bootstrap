@@ -1,4 +1,33 @@
+// Função que valida os campos do formulário
+function validarFormulario(ids) {
+    let valido = true;
+    ids.forEach(id => {
+        const input = document.getElementById(id);
+        if (!input.value) {
+            input.classList.add('is-invalid');
+            valido = false;
+        } else {
+            input.classList.remove('is-invalid');
+        }
+    });
+    return valido;
+}
+
+// Função que valida os campos do formulário antes de abrir o modal
+function validarAntesDeAbrirModal() {
+    const inputsPrincipais = ['nome-medicamento', 'nome-laboratorio', 'preco'];
+    if (validarFormulario(inputsPrincipais)) {
+        $('#imagemModal').modal('show');
+    }
+}
+
 function cadastrarRemedio(event) {
+    const inputsModal = ['url-medicamento', 'url-laboratorio'];
+
+    // Valida os campos do formulário do modal
+    if (!validarFormulario(inputsModal)) {
+        return;
+    }
 
     const remedio = {
         id: Math.random(),
@@ -7,7 +36,7 @@ function cadastrarRemedio(event) {
         dataCriacao: new Date().toLocaleDateString(),  
         preco: document.getElementById('preco').value,
         fotoMedicamento: document.getElementById('url-medicamento').value,
-        fotoLaboraorio: document.getElementById('url-laboratorio').value,
+        fotoLaboratorio: document.getElementById('url-laboratorio').value,
     };
 
     let remedios = JSON.parse(localStorage.getItem('remedios')) || [];
