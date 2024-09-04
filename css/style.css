@@ -1,0 +1,89 @@
+:root {
+    --dark-color: #424242;
+    --dark-turquoise: #229799;
+    --light-turquoise: #48CFCB;
+    --light-grey: #F5F5F5;
+    --super-white: #fff;
+    --red: #ff0000;
+    --dark-red: #c70000;
+}
+
+body {
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+header {
+    background-color: var(--light-grey);
+}
+
+.footer {
+    background-color: var(--light-turquoise); 
+    color: var(--super-white);
+    padding: 10px 0;
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center; 
+    font-size: 18px; 
+}
+
+h1 {
+    color: var(--dark-turquoise);
+    font-size: 27px !important;
+}
+
+h2 {
+    color: var(--light-turquoise);
+    font-size: 20px !important;
+}
+
+.button-style-cancelar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 7px;
+    background-color: var(--red);
+    border-color: var(--red) !important;
+    color: var(--super-white);
+    border-style: none;
+    border-radius: 4px !important;
+}
+
+.button-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 7px;
+    background-color: var(--light-turquoise);
+    border-color: var(--light-turquoise) !important;
+    color: var(--super-white);
+    border-style: none;
+    border-radius: 4px !important;
+}
+
+.button-style:hover {
+    background-color: var(--dark-turquoise);
+    border-color: var(--dark-turquoise);
+    color: var(--super-white);
+}
+
+.button-style-cancelar:hover {
+    background-color: var(--dark-red);
+    border-color: var(--dark-red);
+    color: var(--super-white);
+}
+
+.logo {
+    max-width: 85px;
+    height: auto;
+    display: block;
+}
+
+
+
