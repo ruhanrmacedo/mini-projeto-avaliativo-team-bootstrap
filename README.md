@@ -47,14 +47,6 @@ Criar uma vitrine de medicamentos com as seguintes funcionalidades:
 
 ---
 
-## Apresentação em vídeo
-Cada integrante realizou a apresentação individual conforme orientação no AVA da DevInHouse.
-
-https://drive.google.com/file/d/1AkjuQKc3KP1NTqAbRKyQO-Cp69ZeOmY8/view?usp=drive_link
-
-
----
-
 ## Observações
 Este projeto foi realizado em grupo com divisão de tarefas via Discord e versionamento em branches. A colaboração e revisões foram feitas por Pull Requests e integração direta via GitHub.
 
